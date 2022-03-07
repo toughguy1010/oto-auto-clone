@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/product.css">
+</head>
+
+<body>
+    <div class="product-content">
+        <p class="product-title">
+            Welcome to <br /><span class="sub-product-title">
+                our Products
+            </span>
+        </p>
+        <div class="filter-section">
+            <div class="filter-sidebar">
+                <form class="filter-form">
+                    <input type="text" placeholder="Type here to search" class="filter-input" />
+                </form>
+                <div class="filter-detail">
+                    <h3 class="sidebar-title filter-title">Search filter</h3>
+                    <div class="select">
+                        <select id="color" class="filter-select">
+                            <option value="all">All color</option>
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select id="size" class="filter-select">
+                            <option value="all">Size</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+
+                    <div class="price-chose">Price: 120$</div>
+                    <div class="price">
+                        <span class="price-current">0$</span>
+                        <input class="price-range" type="range" min="0" step="20" max="300" />
+                        <span class="price-current">300$</span>
+                    </div>
+
+                    <div class="filter-search-btn">
+                        <button class="search-btn" onClick={altertNoti}>Get voucher</button>
+                    </div>
+                    <div class="overlay-voucher" onClick={hiddenOverlay}>
+                        <div class="overlay-inner">
+                            <p class="overlay-alert">You are not eligible to receive this voucher</p>
+                            <span class="overlay-close">Click outside the modal to close</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-category">
+                    <h3 class="sidebar-title">Products Categories</h3>
+                    <ul class="category-list">
+                        <li class="category-item">
+                            <span>Women collection</span>
+                            <p>36</p>
+                        </li>
+                        <li class="category-item">
+                            <span>Men collection</span>
+                            <p>43</p>
+                        </li>
+                        <li class="category-item">
+                            <span>Kids collection</span>
+                            <p>62</p>
+                        </li>
+                        <li class="category-item">
+                            <span>Accessories</span>
+                            <p>18</p>
+                        </li>
+                        <li class="category-item">
+                            <span>New arrivals</span>
+                            <p>12</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-product">
+                <div class="filter-menu">
+                    <ul class="filter-list">
+                        <li>
+                            Test
+                            <div class="filter-item-hover" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-content">
+                    <ul class="product-list">
+                        <div class='wrapper-product'>
+                            <li class="product-item"></li>
+                            <div class="product-item-id">
+                                <p class="product-name">Name: Audio car</p>
+                                <span class="product-price">Price: 120$</span>
+                                <span class="product-size">Size: M</span>
+                            </div>
+                            <a href="#" class="add-to-cart">View detail</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
